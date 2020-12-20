@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Franck Daudet</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style/style2.css" id="theme2" media="">
+        <link rel="stylesheet" href="style/style.css" id="theme1" media="">
+        <link rel="stylesheet" href="style/content.css">
+
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+
+        <!-- Favicon -->
+        <link rel="icon" href="image/Favicon.png">
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Franck Daudet">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Free Web tutorials">
+
+ 
+        <!-- Scripts -->
+        <script src="script/test.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        // https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle
+            $(document).ready(function(){
+              $("#flip").click(function(){
+                $("#Menu-navigation").slideToggle("slow");
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <header> 
+            <div id="Description-Menu">
+                <h1>Franck Daudet</h1>
+                <h2>Formulaire</h2>
+                <button id="flip">Menu</button>   
+            </div>   
+            <nav id="Menu-navigation">
+                <button onclick="ChangeStylesheet()">Autre Style</button> 
+                <ul>
+                    <li>
+                        <a class="Click-Card" href="index.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">C.V.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="Click-Card" href="Projet.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">Mes Projets</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="Click-Card" href="formulaire.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">Formulaire</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="form" action="mailto:chassan.franck@gmail.com?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+                <h1>Formulaire de contact</h1>
+                <label for="nom">Nom et Prénom</label>
+                <input type="text" id="nom" name="Nom" placeholder="Votre nom et prénom">
+
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="Sujet" placeholder="L'objet de votre message">
+
+                <label for="emailAddress">Email</label>
+                <input id="emailAddress" type="Email" name="email" placeholder="Votre email">
+
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="Subject" placeholder="Votre message" style="height:200px"></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </main>   
+    </body>
+</html>

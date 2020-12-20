@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#flip{
+  display: none;
+}
+/* Entete*/ 
+header, #Menu-navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header{
+  background-color: grey;
+}
+
+header h1, h2, li{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header h2{
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+header li, header button{
+  border: none;
+  width: auto;
+  background: none;
+}
+#Description-Menu{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+#Menu-navigation{
+  width: 50%;
+  display:flex;
+}
+#Menu-navigation ul{
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+#Menu-navigation ul li a ,#Menu-navigation > button:nth-child(1){
+  text-decoration: none;
+  color: black;
+}
+#Menu-navigation > button:nth-child(1){
+  order:3;
+}
+
+#Menu-navigation > button:nth-child(1){
+  width: 20%;
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Franck Daudet</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style/style2.css" id="theme2" media="">
+        <link rel="stylesheet" href="style/style.css" id="theme1" media="">
+        <link rel="stylesheet" href="style/content.css">
+
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+
+        <!-- Favicon -->
+        <link rel="icon" href="image/Favicon.png">
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Franck Daudet">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Free Web tutorials">
+
+ 
+        <!-- Scripts -->
+        <script src="script/test.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+        // https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle
+            $(document).ready(function(){
+              $("#flip").click(function(){
+                $("#Menu-navigation").slideToggle("slow");
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <header> 
+            <div id="Description-Menu">
+                <h1>Franck Daudet</h1>
+                <h2>Formulaire</h2>
+                <button id="flip">Menu</button>   
+            </div>   
+            <nav id="Menu-navigation">
+                <button onclick="ChangeStylesheet()">Autre Style</button> 
+                <ul>
+                    <li>
+                        <a class="Click-Card" href="index.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">C.V.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="Click-Card" href="Projet.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">Mes Projets</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="Click-Card" href="formulaire.html">
+                            <div class="Menu-Lien">
+                                <div class ="Card-Image"></div>
+                                <div class="Descrition-Lien">
+                                    <h3 class="Titre-Lien">Formulaire</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="photo">
+                    <img src="image/PDP.png" alt="Ma photo de profil">
+                </div>
+                <div class="presentation">
+                    <h2>Qui suis-je ?</h2>
+                    <p>Etudiant en 1ere année de DUT Informatique à L'IUT d'Aix-En-Provence,
+                    <p>Bac S SVT Option Physique Obtenue en 2019, J'ai fait une 1ere année de Licence Math-Informatique, que j'ai validé, puis je me suis réorienté en DUT</p>
+                    <p>Je suis passionnée de musique (guitare electrique) et d'informatique.</p>
+                    <p>J'ai le Permis B et le BAFA</p>
+                </div>
+                <div class="telechargement">
+                    <a href="#" onclick="Cv(CvManquant) ">Télécharger mon CV</a>
+                </div>
+                <div class="contact">
+                    <h2>Informations de contact</h2>
+                    <div class="contact-flex">
+                        <p>Nom : </p>
+                        <p>Daudet Franck</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p>Adresse : </p>
+                        <p>14 Les Ombelles 3 - 13600 La Ciotat</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p>Téléphone :</p>
+                        <p>06 51 23 36 79</p>
+                    </div>
+                    <div class="contact-flex">
+                        <p>Mail : </p>
+                        <p><a href="mailto:chasan.franck@gmail.com">chasan.franck@gmail.com</a></p>
+                        <p>Mail Universitaire : </p>
+                        <p><a href="mailto:franck.daudet@etu.univ-amu.fr">franck.daudet@etu.univ-amu.fr</a></p>
+                    </div>
+                    <div class="contact-flex">
+                        <p>Permis :</p>
+                        <p>B</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
