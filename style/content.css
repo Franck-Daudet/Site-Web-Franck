@@ -1,5 +1,5 @@
 /* font*/
-h1,h2,input{
+*{
   font-family: 'Roboto', sans-serif;
 }
 p,a,label{
@@ -43,12 +43,18 @@ main{
   
   .presentation{
     flex-basis: 90%;
-  
   }
+  #txt-presentation {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   .telechargement{
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .telechargement a {
     display: block;
@@ -67,7 +73,9 @@ main{
   .contact{
     flex-basis: 100%;
     margin-left: 5%;
-  
+  }
+  .contact > h2{
+    margin-bottom: 0.5em;
   }
   .contact-flex {
     display: flex;
@@ -77,18 +85,7 @@ main{
 
   
   /* Formulaire */
-  #form {
-    /* Ajouter box-sizing */
-    box-sizing : border-box;
-    border-radius:5px;
-    background-color:#f2f2f2;
-    margin-top: 1%;
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 94%;
-    padding: 20px;
-  
-  }
+
   #form > *{
     margin-top : 20px;
     margin-bottom : 20px;
@@ -98,7 +95,7 @@ main{
     display:block;
     width: 100%;
     min-height: 3em;
-    background-color: #e0dddd;
+    background-color: rgb(168, 165, 165);
   }
 
 /* Projet */
